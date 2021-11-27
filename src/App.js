@@ -1,9 +1,12 @@
 import React from 'react'
+import Title from './components/Title'
+import UploadForm from './components/UploadForm'
 
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
+    <div className='App'>
+      <Title />
+      <UploadForm />
     </div>
   )
 }
