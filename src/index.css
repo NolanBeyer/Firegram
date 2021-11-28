@@ -39,12 +39,14 @@ body {
 }
 
 .title h2 {
+  color: var(--secondary);
   margin-top: 60px;
   font-size: 2.6rem;
 }
 
 .title p {
   margin-top: 60px;
+  color: var(--secondary);
 }
 
 /* upload form styles */

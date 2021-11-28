@@ -6,20 +6,23 @@ const UploadForm = () => {
   const [error, setError] = useState(null)
 
   const types = ['image/png', 'image/jpeg']
-  function changeHandler(e) {
+
+  const handleChange = (e) => {
     let selected = e.target.files[0]
+
     if (selected && types.includes(selected.type)) {
       setFile(selected)
       setError('')
     } else {
       setFile(null)
-      setError('Pleas select an image file (png or jpeg)')
+      setError('Please select an image file (png or jpg)')
     }
   }
+
   return (
     <form>
       <label>
-        <input type='file' onChange={changeHandler} />
+        <input type='file' onChange={handleChange} />
         <span>+</span>
       </label>
       <div className='output'>
